@@ -1,0 +1,3 @@
+[submodule "strapi-plugin-mux-video-uploader"]
+	path = strapi-plugin-mux-video-uploader
+	url = https://github.com/muxinc/strapi-plugin-mux-video-uploader

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_blog_posts",
+  "info": {
+    "singularName": "video-blog-post",
+    "pluralName": "video-blog-posts",
+    "displayName": "Video blog post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Body": {
+      "type": "blocks"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "asset_info": {
+      "type": "json"
+    },
+    "mux_asset": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::mux-video-uploader.mux-asset"
+    }
+  }
+}
